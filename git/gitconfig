@@ -1,9 +1,10 @@
 [user]
-	email = hello@chinleung.com
-	name = Chin Leung
+	email = yuqiao@swoo.ca
+	name = Yu Qiao Chen
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = /Users/swoo/.swoo-workspace/.gitignore
 	editor = nvim
+	hooksPath = /Users/swoo/.swoo-workspace/hooks
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true

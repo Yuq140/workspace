@@ -1,6 +1,7 @@
 " Theme
 set background=dark
-colorscheme gruvbox
+ "colorscheme gruvbox
+colorscheme onedark_vivid
 
 " coc.nvim
 hi CocErrorLine guibg=#ce2c28
@@ -15,7 +16,8 @@ hi DiffChange guibg=#282828 ctermbg=235 guifg=#fdba48 ctermfg=108 cterm=NONE gui
 hi DiffDelete guibg=#282828 ctermbg=235 guifg=#fb4934 ctermfg=167 cterm=NONE gui=NONE
 
 " UI
-hi CursorLineNr guibg=#282828 ctermbg=235
-hi! SignColumn guibg=#282828 ctermbg=235
-hi TabLineFill guibg=#282828 ctermbg=235
-hi TabLineSel guibg=#282828 ctermfg=yellow
+hi CursorLineNr ctermbg=235
+hi! SignColumn ctermbg=235
+hi TabLine guibg=#1d2127
+hi TabLineFill ctermbg=235
+hi TabLineSel ctermfg=yellow

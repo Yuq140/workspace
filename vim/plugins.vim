@@ -26,7 +26,7 @@ Plug 'wincent/ferret'
 " PHP
 Plug 'arnaud-lb/vim-php-namespace'
 Plug 'captbaritone/better-indent-support-for-php-with-html', { 'for': 'php' }
-Plug 'chinleung/vim-pretty-php', {'for': 'php'}
+"Plug 'chinleung/vim-pretty-php', {'for': 'php'}
 Plug 'mattn/emmet-vim'
 Plug 'phpactor/phpactor', {'for': 'php', 'tag': '*', 'do': 'composer install --no-dev -o'}
 "Plug 'stephpy/vim-php-cs-fixer', {'for': 'php'}
@@ -35,6 +35,7 @@ Plug 'phpactor/phpactor', {'for': 'php', 'tag': '*', 'do': 'composer install --n
 " Styling
 Plug 'morhetz/gruvbox'
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'olimorris/onedarkpro.nvim'
 
 " Syntax
 Plug 'sheerun/vim-polyglot'

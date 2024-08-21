@@ -85,6 +85,19 @@ function! StartHorizon()
     endif
 endfunction
 
+function! SetupTreeSitter()
+lua << EOF
+    require('nvim-treesitter.configs').setup{
+        highlight = {
+            enable = true,
+        },
+        indent = {
+            enable = true,
+        },
+    }
+EOF
+endfunction
+
 augroup AutoCommands
     autocmd!
 
@@ -101,4 +114,6 @@ augroup AutoCommands
     " Start Horizon and Vite builds automatically
     autocmd VimEnter * call StartHorizon()
     autocmd VimEnter * call StartBuilds()
+
+    autocmd VimEnter * call SetupTreeSitter()
 augroup END

@@ -20,15 +20,16 @@
         "<BS>": "action:delete"
     },
     "php-cs-fixer.allowRisky": true,
-    "php-cs-fixer.config": "/Users/chin/workspace/php/.php-cs-fixer.php",
-    "php-cs-fixer.toolPath": "/Users/chin/.composer/vendor/bin/php-cs-fixer",
+    "php-cs-fixer.config": "/Users/swoo/workspace/php/.php-cs-fixer.php",
+    "php-cs-fixer.toolPath": "/Users/swoo/.composer/vendor/bin/php-cs-fixer",
     "session.restartOnSessionLoad": true,
     "snippets.ultisnips.directories": [
-        "/Users/chin/workspace/vim/snippets"
+        "/Users/swoo/workspace/vim/snippets"
     ],
     "suggest.completionItemKindLabels": {
         "function": "\uf794",
         "method": "\uf794"
     },
-    "suggest.triggerAfterInsertEnter": true
+    "suggest.triggerAfterInsertEnter": true,
+    "snippets.ultisnips.pythonPrompt": false
 }

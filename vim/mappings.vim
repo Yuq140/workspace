@@ -9,6 +9,7 @@ map <Leader>w :w<cr>
 nnoremap th :bprev<CR>
 nnoremap tl :bnext<CR>
 nnoremap tn :enew<CR>
+nnoremap <S-Tab> :bnext<CR>
 
 " Mappings: coc
 xmap <leader>f <Plug>(coc-format-selected)
@@ -55,7 +56,7 @@ nmap <Leader>la :split \| terminal valet php artisan<space>
 nmap <Leader>lm :split \| terminal valet php artisan make:
 nmap <Leader>ln :split \| terminal valet php artisan nova:
 nmap <Leader>lt :split \| terminal valet php artisan tinker<cr>i
-nmap <Leader><Leader>hs :terminal valet php artisan horizon<cr>
+nmap <Leader><Leader>hs :terminal valet php artisan horizon<cr>:file Horizon<cr>
 nmap <leader><leader>i18n :!php artisan lang:js public/js/i18n.js --quiet<cr><cr>
 nmap <Leader><Leader>mm :split \| terminal valet php artisan migrate<cr>i
 nmap <Leader><Leader>mrb :split \| terminal valet php artisan migrate:rollback<cr>i
@@ -77,6 +78,7 @@ imap <Leader><tab> <esc>kddko
 nmap <leader>ec viwb<ESC>i\<ESC>l:PhpactorClassExpand<CR>e
 nmap <leader>mv :PhpactorMoveFile<cr>
 vmap <leader>ev :PhpactorExtractExpression<CR>
+nmap <leader>rn :PhpactorContextMenu<CR>
 
 " Quick wins
 nmap <tab> Hi<tab><esc>
@@ -99,8 +101,8 @@ nmap <C-J> <C-W><C-J>
 nmap <C-K> <C-W><C-K>
 nmap <C-H> <C-W><C-H>
 nmap <C-L> <C-W><C-L>
-nmap <Leader><up> <c-w>+
-nmap <Leader><down> <c-w>-
+nmap <Leader><up> <c-w>10+
+nmap <Leader><down> <c-w>10-
 nmap <Leader><left> <c-w>>
 nmap <Leader><right> <c-w><
 nmap <Leader>= <c-w>=
@@ -127,3 +129,18 @@ nmap <leader>tn :TestNearest<cr>
 nmap <leader>tl :TestLast<cr>
 nmap <leader>tv :TestVisit<cr>
 tmap <C-o> <C-\><C-n>
+
+" Search
+map / /\c
+
+" Mappings derived from VSCode
+nmap <A-z> :set wrap!<cr>
+
+nnoremap <A-down> :m .+1<CR>==
+nnoremap <A-up> :m .-2<CR>==
+
+inoremap <A-down> <Esc>:m .+1<CR>==gi
+inoremap <A-up> <Esc>:m .-2<CR>==gi
+
+vnoremap <A-down> :m '>+1<CR>gv=gv
+vnoremap <A-up> :m '<-2<CR>gv=gv
